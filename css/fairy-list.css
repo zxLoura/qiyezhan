@@ -1,0 +1,249 @@
+/*
+* @Author: ZX
+* @Date:   2018-08-27 13:35:01
+* @Last Modified by:   ZX
+* @Last Modified time: 2018-08-27 21:08:31
+*/
+/* 顶部导航开始 */
+nav{
+	width: 100%;
+	height:44px; 
+	background: #fc6d0a;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+nav .con{
+	width: 100%;
+	height:100%;
+	display: flex;
+	justify-content: space-between;
+}
+nav .con .pic{
+	margin: auto 0;
+}
+nav .con .pic img{
+	display: block;	
+	width: 146px;
+	height: 54px;
+}
+nav .con .pic{
+	display: none;
+}
+nav .con .list{
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+nav .con .list a{
+	color: #fff;
+	font-size: 14px;
+	line-height: 44px;	
+	text-decoration: none;
+	position: relative;
+}
+nav .con .list a.list-last{
+	position: absolute;
+	right: 10px;
+}
+nav .con .list .list-first{
+	display: none;
+}
+nav .con .list .list-text{
+	display: none;
+}
+nav .con .list a:hover{
+	color: #888888;
+}
+/* 顶部导航结束 */
+
+/* 内容开始 */
+main{
+	width: 100%;
+	padding: 140px 0;
+}
+main .box{
+	margin: 0;
+}
+main .box .left{
+	margin: 0;
+	padding:0 ;
+}
+main .box .left h3{
+	font-size: 16px;
+}
+main .box .left span{
+	display: block;
+	font-size: 14px;
+	color: #ff7e28;
+	padding: 10px 0 20px;
+}
+main .box .left img{
+	display: block;
+	width: 100%;
+	padding-bottom: 30px;
+}
+main .box .left p{
+	font-size: 14px;
+	color: #aaaaaa;
+}
+main .box .left lable{
+	display: block;
+	font-size: 14px;
+	color: #ff7e28;
+	padding: 10px 0 0;
+}
+main .box .left .pic{
+	display: flex;
+}
+main .box .left .pic span{
+	padding: 15px 0;
+	font-size: 16px;
+	color: #000;
+}
+main .box .left .pic i{
+	font-size: 20px;
+	display: block;
+	margin: auto 0;
+	padding: 0 2px;
+}
+main .box .left .pic .icon-weixin-{
+	font-size: 23px;
+	color: #7bc549;
+}
+main .box .left .pic .icon-face-book{
+	color: #44619D;
+
+}
+main .box .left .pic .icon-guge_google{
+	color:  #db4437;
+}
+main .box .right .one{
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+	text-align: left;
+	padding-bottom: 10px;
+}
+main .box .right .one h3{
+	font-size: 16px;
+}
+main .box .right .one p{
+	font-size: 14px;
+	color: #aaa;
+}
+/* 内容结束 */
+
+/* 底部开始 */
+footer{	
+	width: 100%;
+	padding: 30px 0 20px;
+	display: flex;
+	border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+footer .box{
+	display: flex;
+	margin: 0 auto;	
+	
+}
+footer .box .one{
+	margin: 0 5px;
+	width: 25px;
+	height: 24px;
+	background-image: url('../img/pic.png');
+	background-position:-48px -48px;
+	background-repeat: no-repeat;
+}
+footer .box .two{
+	margin: 0 5px;
+	width: 25px;
+	height: 24px;
+	background-image: url('../img/pic.png');
+	background-position:1px -48px;
+	background-repeat: no-repeat;
+}
+footer .box .three{
+	margin: 0 5px;
+	width: 25px;
+	height: 24px;
+	background-image: url('../img/pic.png');
+	background-position:-23px -48px;
+	background-repeat: no-repeat;
+}
+footer .box .four{
+	margin: 0 5px;
+	width: 25px;
+	height: 24px;
+	background-image: url('../img/pic.png');
+	background-position:-96px -48px;
+	background-repeat: no-repeat;
+}
+footer .box .five{
+	margin: 0 5px;
+	width: 25px;
+	height: 24px;
+	background-image: url('../img/pic.png');
+	background-position:-192px -48px;
+	background-repeat: no-repeat;
+}
+.bottom{
+	font-size: 13px;
+	color:#808080;
+	text-align: center;
+	padding-bottom: 30px;
+}
+/* 底部结束 */
+
+/* 平板：小屏幕 col-sm- >768px */
+@media screen and (min-width: 768px){
+
+}
+
+/* 普通PC端：中等屏幕 col-md- >992px */
+@media screen and (min-width: 992px){
+		/* 顶部导航开始 */
+	nav{
+		height:74px; 
+		background-color: #fff;
+	}
+	nav .con .pic{
+		display: inline;
+	}
+	nav .con .list{
+		margin:0;
+	}
+	nav .con .list a{
+			color: #aaaaaa;
+		line-height: 74px;	
+	}
+	nav .con .list .list-text{
+		margin-left: 60px;	
+		display: inline;
+	}
+	nav .con .list a.list-last{
+		display: none;
+	}
+	nav .con .list .list-first{
+		display: inline;
+	}
+	nav .con .list .list-second{
+		display: none;
+	}
+	/* 顶部导航结束 */
+
+	main .box .left h3{
+		font-size: 26px;
+	}
+	main .box .left img{
+		width: auto;
+	}
+	main .box .right{
+		padding-left:70px;
+	}
+
+}
+
+/* 大屏幕PC：大屏幕 col-lg- >1200px */
+@media screen and (min-width: 1200px){
+
+}

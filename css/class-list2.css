@@ -1,0 +1,259 @@
+/*
+* @Author: ZX
+* @Date:   2018-08-27 12:57:36
+* @Last Modified by:   ZX
+* @Last Modified time: 2018-08-28 10:30:22
+*/
+/* 顶部导航开始 */
+nav{
+	width: 100%;
+	height:44px; 
+	background: #fc6d0a;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
+}
+nav .con{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+nav .con .pic{
+	margin: auto 0;
+}
+nav .con .pic img{
+	display: block;	
+	width: 146px;
+	height: 54px;
+}
+nav .con .pic{
+	display: none;
+}
+nav .con .list{
+	display: flex;
+}
+nav .con .list a{
+	color: #fff;
+	font-size: 14px;
+	line-height: 44px;	
+	text-decoration: none;
+	position: relative;
+}
+nav .con .list a.list-last{
+	position: absolute;
+	right: 10px;
+}
+nav .con .list .list-text{
+	display: none;
+}
+nav .con .list .list-text:hover{
+	color: #888888;
+}
+nav .side{
+	width: 100%;
+	background: #fc6d0a;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 10;
+	text-align: center;
+	overflow: hidden;
+	transition: all .8s;
+	height: 0;
+	/* opacity: 0; */
+}
+nav .side span{
+	background: #fc6d0a;
+	padding: 5px 0;
+	font-size: 15px;
+	display: block;
+	width: 100%;
+	color: #fff;
+}
+nav .side span:nth-child(1){
+	padding: 20px 0  10px;
+}
+nav:hover .side{
+	/* opacity: 1; */
+	height: 240px;
+}
+/* 顶部导航结束 */
+
+/* 关于我们开始 */
+.about{
+	width: 100%;
+	background-color: #f7f7f7;
+	padding: 10px 0;
+}
+.about ul{
+	width: 100%;
+	padding: 80px 0;
+	margin: 0;
+}
+.about ul .left{
+	padding: 10px;
+}
+.about ul .left .pic{
+	padding: 10px;
+	position: relative;
+	z-index: 0;
+}
+.about ul .left img{
+	display: inline-block;
+	width: 100%;
+	
+}
+.about ul .left .pic::after{
+	content: "";
+	display:  block;
+	width: 80%;
+	height: 50%;
+	background-color: #ff7415;
+	position: absolute;
+	top: 0;
+	left: 20%;
+	z-index: -1;
+}
+.about ul .right{
+	padding: 10px 20px;
+}
+.about ul .right h3{
+	color:#ff7415;
+	font-size: 24px; 
+}
+.about ul .right span{
+	color:#aaaaaa;
+	font-size: 14px; 
+}
+.about ul .right .empty{
+	padding: 10px 0;
+}
+.about ul .right p{
+	color:rgb(105, 105, 105);
+	font-size: 14px; 
+	line-height: 26px;
+}
+/* 关于我们结束 */
+
+/* 底部开始 */
+footer{	
+	width: 100%;
+	padding: 30px 0 20px;
+	display: flex;
+	border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+footer .box{
+	display: flex;
+	margin: 0 auto;	
+	
+}
+footer .box .one{
+	margin: 0 5px;
+	width: 25px;
+	height: 24px;
+	background-image: url('../img/pic.png');
+	background-position:-48px -48px;
+	background-repeat: no-repeat;
+}
+footer .box .two{
+	margin: 0 5px;
+	width: 25px;
+	height: 24px;
+	background-image: url('../img/pic.png');
+	background-position:1px -48px;
+	background-repeat: no-repeat;
+}
+footer .box .three{
+	margin: 0 5px;
+	width: 25px;
+	height: 24px;
+	background-image: url('../img/pic.png');
+	background-position:-23px -48px;
+	background-repeat: no-repeat;
+}
+footer .box .four{
+	margin: 0 5px;
+	width: 25px;
+	height: 24px;
+	background-image: url('../img/pic.png');
+	background-position:-96px -48px;
+	background-repeat: no-repeat;
+}
+footer .box .five{
+	margin: 0 5px;
+	width: 25px;
+	height: 24px;
+	background-image: url('../img/pic.png');
+	background-position:-192px -48px;
+	background-repeat: no-repeat;
+}
+.bottom{
+	font-size: 13px;
+	color:#808080;
+	text-align: center;
+	padding-bottom: 30px;
+}
+/* 底部结束 */
+
+/* 平板：小屏幕 col-sm- >768px */
+@media screen and (min-width: 768px){
+
+}
+
+/* 普通PC端：中等屏幕 col-md- >992px */
+@media screen and (min-width: 992px){
+		/* 顶部导航开始 */
+	nav{
+		height:74px; 
+		background-color: #fff;
+	}
+	nav .con .pic{
+		display: inline;
+	}
+	nav .con .list{
+		margin:0;
+	}
+	nav .con .list a{
+		color:#aaaaaa;
+		line-height: 74px;	
+	}
+	nav .con .list .list-text{
+		margin-left: 60px;	
+		display: inline;
+	}
+	nav .con .list a.list-last{
+		display: none;
+	}
+	nav .con .list .list-second{
+		display: none;
+	}
+	nav .con{
+		justify-content: space-between;
+	}
+	nav .side{
+		display: none;
+	}
+	/* 顶部导航结束 */
+
+	/* 关于我们开始 */
+	.about{
+		padding: 60px 0;
+	}
+	.about .title{
+		font-size: 24px; 
+	}
+	.about .word{
+		font-size: 14px; 
+	}
+	/* 关于我们结束 */
+
+
+}
+
+/* 大屏幕PC：大屏幕 col-lg- >1200px */
+@media screen and (min-width: 1200px){
+
+}

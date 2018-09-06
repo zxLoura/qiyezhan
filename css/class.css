@@ -1,0 +1,273 @@
+/*
+* @Author: ZX
+* @Date:   2018-08-27 08:54:51
+* @Last Modified by:   ZX
+* @Last Modified time: 2018-08-28 10:18:12
+*/
+/* 顶部导航开始 */
+nav{
+	width: 100%;
+	height:44px; 
+	background: #fc6d0a;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
+}
+nav .con{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+nav .con .pic{
+	margin: auto 0;
+}
+nav .con .pic img{
+	display: block;	
+	width: 146px;
+	height: 54px;
+}
+nav .con .pic{
+	display: none;
+}
+nav .con .list{
+	display: flex;
+}
+nav .con .list a{
+	color: #fff;
+	font-size: 14px;
+	line-height: 44px;	
+	text-decoration: none;
+	position: relative;
+}
+nav .con .list a.list-last{
+	position: absolute;
+	right: 10px;
+}
+nav .con .list .list-text{
+	display: none;
+}
+nav .con .list .list-text:hover{
+	color: #888888;
+}
+nav .side{
+	width: 100%;
+	background: #fc6d0a;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 10;
+	text-align: center;
+	overflow: hidden;
+	transition: all .8s;
+	height: 0;
+	/* opacity: 0; */
+}
+nav .side span{
+	background: #fc6d0a;
+	padding: 5px 0;
+	font-size: 15px;
+	display: block;
+	width: 100%;
+	color: #fff;
+}
+nav .side span:nth-child(1){
+	padding: 20px 0  10px;
+}
+nav:hover .side{
+	/* opacity: 1; */
+	height: 240px;
+}
+/* 顶部导航结束 */
+
+/* 班级设置开始 */
+.class{
+	width: 100%;
+	background-color: #f7f7f7;
+	padding: 10px 0;
+}
+.class .title{
+	padding-top: 15px;
+	padding-bottom: 5px;
+	text-align:center;
+	font-size: 20px; 
+	margin-top: 30px;
+	color: #ff7519;
+}
+.class .word{
+	text-align:center;
+	font-size: 12px; 
+	color: #aaaaaa;
+}
+.class .word::after{
+	content: "";
+	display: block;
+	width: 60px;
+	height: 2px;
+	margin: 17px auto 0;
+	background-color: #ff7519;
+}
+.class ul{
+	padding: 60px 0;
+}
+.class ul li{
+	padding: 20px 0;
+}
+.class ul li .pic{
+	padding: 0;
+}
+.class ul li .box{
+	overflow: hidden;
+}
+.class ul li img{
+	display: block;
+	width: 100%;
+	transition: transform .5s;
+}
+.class ul li img:hover{
+	transform: scale(1.1,1.1);
+}
+.class ul li h3{
+	background-color:rgba(249,92,24,1);
+	font-size: 16px;
+	color: #fff;
+	text-align: center;
+	margin: 0; 
+	padding: 5px 0 10px;
+}
+.class ul li p{
+	background-color:rgba(249,92,24,1);
+	font-size: 12px;
+	color: #fff;
+	text-align: center;
+	padding-bottom: 60px;
+}
+
+/* 班级设置结束 */
+
+/* 底部开始 */
+footer{	
+	border-top: 1px solid rgba(0, 0, 0, 0.2);
+	width: 100%;
+	padding: 30px 0 20px;
+	display: flex;
+
+}
+footer .box{
+	display: flex;
+	margin: 0 auto;	
+	
+}
+footer .box .one{
+	margin: 0 5px;
+	width: 25px;
+	height: 24px;
+	background-image: url('../img/pic.png');
+	background-position:-48px -48px;
+	background-repeat: no-repeat;
+}
+footer .box .two{
+	margin: 0 5px;
+	width: 25px;
+	height: 24px;
+	background-image: url('../img/pic.png');
+	background-position:1px -48px;
+	background-repeat: no-repeat;
+}
+footer .box .three{
+	margin: 0 5px;
+	width: 25px;
+	height: 24px;
+	background-image: url('../img/pic.png');
+	background-position:-23px -48px;
+	background-repeat: no-repeat;
+}
+footer .box .four{
+	margin: 0 5px;
+	width: 25px;
+	height: 24px;
+	background-image: url('../img/pic.png');
+	background-position:-96px -48px;
+	background-repeat: no-repeat;
+}
+footer .box .five{
+	margin: 0 5px;
+	width: 25px;
+	height: 24px;
+	background-image: url('../img/pic.png');
+	background-position:-192px -48px;
+	background-repeat: no-repeat;
+}
+.bottom{
+	font-size: 13px;
+	color:#808080;
+	text-align: center;
+	padding-bottom: 30px;
+}
+/* 底部结束 */
+
+
+/* 平板：小屏幕 col-sm- >768px */
+@media screen and (min-width: 768px){
+
+}
+
+/* 普通PC端：中等屏幕 col-md- >992px */
+@media screen and (min-width: 992px){
+		/* 顶部导航开始 */
+	nav{
+		height:74px; 
+		background-color: #fff;
+	}
+	nav .con .pic{
+		display: inline;
+	}
+	nav .con .list{
+		margin:0;
+	}
+	nav .con .list a{
+		color:#aaaaaa ;
+		line-height: 74px;	
+	}
+	nav .con .list .list-text{
+		margin-left: 60px;	
+		display: inline;
+	}
+	nav .con .list .list-text1{
+		margin-left: 60px;	
+		color: #888888;
+	}
+	nav .con .list a.list-last{
+		display: none;
+	}
+	nav .con{
+		justify-content: space-between;
+	}
+	nav .side{
+		display: none;
+	}
+	/* 顶部导航结束 */
+
+	/* 班级设置开始 */
+	.class{
+		padding: 60px 0;
+	}
+	.class .title{
+		font-size: 24px; 
+	}
+	.class .word{
+		font-size: 14px; 
+	}
+	.class .background h3{
+		font-size: 38px;
+	}
+	/* 班级设置结束 */
+
+}
+
+/* 大屏幕PC：大屏幕 col-lg- >1200px */
+@media screen and (min-width: 1200px){
+
+}

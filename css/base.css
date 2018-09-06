@@ -1,0 +1,18 @@
+/*
+* @Author: ZX
+* @Date:   2018-08-13 09:06:00
+* @Last Modified by:   ZX
+* @Last Modified time: 2018-08-13 09:06:49
+*/
+*{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+}
+i{
+	font-style: normal;
+}
