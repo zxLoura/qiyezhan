@@ -2,7 +2,7 @@
 * @Author: ZX
 * @Date:   2018-08-24 12:48:52
 * @Last Modified by:   ZX
-* @Last Modified time: 2018-09-06 17:50:46
+* @Last Modified time: 2018-09-09 14:27:43
 */
 /* 顶部导航开始 */
 nav{
@@ -113,7 +113,7 @@ nav:hover .side{
 }
 /* 左右箭头开始 */
 .banner .more{
-	background: rgba(0, 0, 0, 0.1);
+	background: rgba(255, 255, 255, 0);
 	width: 50px;
 	height: 100px;
 	color: #d3d3d3;
@@ -130,30 +130,30 @@ nav:hover .side{
 .banner .more-left .icon-right{ 
 	float: right;
 }
-.banner .more-left:hover{
+/* .banner .more-left:hover{
 	color: #fff;
-}
+} */
 .banner .more-right{
 	left: calc(100% - 100px);
 }
-.banner .more-right:hover{
+/* .banner .more-right:hover{
 	color: #fff;
-}
+} */
 /* 左右箭头结束 */
 /* 轮播点开始 */
 /* .banner .dots{
 	width: 30px;
     height: 10px;
     /* background: pink; */
-    position: absolute;
+/*     position: absolute;
     bottom: 25px;
     left:0;
     right: 0;
     margin:0 auto;
     display: flex;
     justify-content: space-around;
-}
-.banner .dot{
+} */
+/* .banner .dot{
 	width: 10px;
 	height: 10px;
 	background: #8d9095;
@@ -163,16 +163,20 @@ nav:hover .side{
 .banner .active{
 	border: 2px solid #8d9095;	
 
-} */
+}  */
 	
-
-
-.banner .dot2:hover{
+/* .banner .dot2:hover{
 	width: 10px;
 	height: 10px;
 	background:#fff;
 	border: 2px solid #757575;
-} 
+}  */
+/* .banner .dot:hover{
+	width: 10px;
+	height: 10px;
+	background:#fff;
+	border: 2px solid #757575;
+} */ 
 /* 轮播点结束 */
 .banner .more{
 	display: none;
@@ -258,10 +262,13 @@ nav:hover .side{
 	background-color: #ff7519;
 }
 .class ul{
+	opacity: 0;
 	padding: 60px 0;
+	transition: all .5s;
 }
 .class ul li{
 	padding: 20px 0;
+	height: auto;	
 }
 .class ul li .pic{
 	padding: 0;
@@ -368,7 +375,10 @@ nav:hover .side{
 	background-color: #ff7519;
 }
 .fairy ul{
+	opacity: 0;
 	padding: 60px 15px;
+	transition: all .5s;
+
 }
 .fairy ul li{
 	margin-top: 10px;
@@ -442,7 +452,9 @@ nav:hover .side{
 	background-color: #ff7519;
 }
 .team ul{
+	opacity: 0;
 	padding: 60px 0;
+	transition: all .5s;
 }
 .team ul li{
 	padding: 20px 0;
@@ -708,6 +720,8 @@ footer .box .five{
 	bottom: 20px;
 	right: 0;
 	text-align: center;
+	display: none;
+	
 }
 .back i{
 	font-size: 18px;
